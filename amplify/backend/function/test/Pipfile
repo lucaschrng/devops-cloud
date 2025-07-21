@@ -4,9 +4,16 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pytest = "*"
+pytest-cov = "*"
+moto = "*"
 
 [packages]
 src = {editable = true, path = "./src"}
 
 [requires]
 python_version = "3.13"
+
+[scripts]
+test = "pytest -v"
+test-cov = "pytest --cov=src"
