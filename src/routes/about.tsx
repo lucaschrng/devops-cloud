@@ -11,7 +11,7 @@ function About() {
       <main className="flex-1 p-6 flex items-center justify-center">
         <Card className="w-full max-w-2xl mx-auto shadow-lg">
           <CardHeader>
-            <CardTitle className="text-center">About This Calculator</CardTitle>
+            <CardTitle className="text-center" data-testid="about-heading">About This Calculator</CardTitle>
           </CardHeader>
           <CardContent className="p-6">
             <div className="space-y-4">
@@ -52,6 +52,12 @@ function About() {
                   containerization, and cloud hosting.
                 </p>
               </section>
+              
+              <div className="mt-6 text-center">
+                <a href="/" className="text-blue-500 hover:text-blue-700 font-medium" data-testid="back-to-calculator-link">
+                  Back to Calculator
+                </a>
+              </div>
             </div>
           </CardContent>
         </Card>
