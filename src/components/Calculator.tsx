@@ -84,23 +84,23 @@ export default function Calculator() {
   return (
     <Card className="w-full max-w-md mx-auto shadow-lg">
       <CardContent className="p-4">
-        <div 
+        <div
           className="mb-4 p-4 bg-white border rounded-md text-right text-3xl font-mono h-16 flex items-center justify-end overflow-hidden"
           data-testid="calculator-display"
         >
           {display}
         </div>
         <div className="grid grid-cols-4 gap-2">
-          <Button 
-            variant="outline" 
-            onClick={clearDisplay} 
+          <Button
+            variant="outline"
+            onClick={clearDisplay}
             className="col-span-2"
             data-testid="button-clear"
           >
             AC
           </Button>
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             onClick={() => setDisplay(display.slice(0, -1) || '0')}
             data-testid="button-backspace"
           >
